@@ -3,7 +3,7 @@
 
 using namespace std;
 
-namespace huaguisoftware
+namespace interviewsoftware
 {
 	class tools
 	{

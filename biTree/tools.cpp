@@ -6,7 +6,7 @@
 #include <iterator>
 #include <algorithm>
 using namespace std;
-using namespace huaguisoftware;
+using namespace interviewsoftware;
 
 // 试题一说明：
 // 要求使用最简洁的代码实现“字符串翻转”功能

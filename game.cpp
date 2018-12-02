@@ -78,7 +78,7 @@ bool Game::CheckIsFull() const {
 bool Game::GetNextPosition(int& nRow,int& nCol,SEARCH_WAY& _way){
 	if(nRow>=mRow || nCol>=mCol) return false;
 	
-	if(_way==RIGHT) nCol++;
+    if(_way==RIGHT) nCol++;
     else if(_way==LEFT) nCol--;
     else if(_way==UP)   nRow--;
     else if(_way==DOWN) nRow++;
@@ -91,7 +91,7 @@ bool Game::GetNextPosition(int& nRow,int& nCol,SEARCH_WAY& _way){
     else if(_way==LEFTDOWN){
         nRow++; nCol++;}
     else 
-		return false;
+        return false;
 
     if(nRow>=mRow || nCol>=mCol) return false;
 

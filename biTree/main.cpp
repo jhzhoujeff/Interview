@@ -6,7 +6,7 @@
 #include <fstream>
 
 using namespace std;
-using namespace huaguisoftware;
+using namespace interviewsoftware;
 
 int main(int argc, char *argv[]) {
 	Hello h;

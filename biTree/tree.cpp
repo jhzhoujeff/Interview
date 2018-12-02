@@ -7,7 +7,7 @@
 #include <stack>
 #include <list>
 using namespace std;
-using namespace huaguisoftware;
+using namespace interviewsoftware;
 
 // 试题二说明：
 // 要求设计并实现一个“完全二叉树”，处理加减乘除的计算公式
@@ -313,8 +313,8 @@ double tree::calc(){
             while(!st_op.empty() && checkPriority(st_op.top())!=2) {  
                 out_mid.push_back(st_op.top());
                 st_op.pop();
-            }                       //遇到 "(" 停止
-            st_op.pop();            // 弹出 "("     
+            }                       //遇到 "(" 停止 "(" 不会入栈
+            st_op.pop();            // 弹出 ")"     
         }
     }
     while(!st_op.empty()){
@@ -322,7 +322,7 @@ double tree::calc(){
         out_mid.push_back(x);
         st_op.pop();
     }
-    //中缀完成后，直接计算输出结果
+    //后缀表达式完成后，直接计算输出结果
     return calc_mid(out_mid);
 }
 

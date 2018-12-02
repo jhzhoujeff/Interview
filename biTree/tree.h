@@ -6,7 +6,7 @@
 #include <list>
 using namespace std;
 
-namespace huaguisoftware{
+namespace interviewsoftware{
 
     //tree node struct
     typedef struct _node {
